@@ -8,6 +8,11 @@ from nltk.stem.porter import PorterStemmer
 # =======================
 # NLTK Setup
 # =======================
+# Ensure necessary resources are available (for Streamlit Cloud)
+nltk.download("punkt")
+nltk.download("punkt_tab")
+nltk.download("stopwords")
+
 ps = PorterStemmer()
 
 # =======================
